@@ -1,22 +1,7 @@
 import { useState } from 'react'
-import './home.css'
-import {Link} from 'react-router-dom'
 export default function Home(){
-    return <div className="home">
-        <header className="head">
-            <div className="name">
-                #VANLIFE
-            </div>
-            <div className='nav-tab'>
-            <div className="about">
-                <Link className='link' to="/About">About</Link>
-            </div>
-                
-            <div className="vans">
-                <Link className='link' to="">Vans</Link>
-            </div>
-            </div>
-        </header>
+    console.log("hey")
+    return <div className="binder">
         <main className='main'>
             <div className='text'>
                 <h1 className='main_heading'>
@@ -30,10 +15,5 @@ export default function Home(){
                     Find your van
                 </button>
         </main>
-        <footer className='foot'>
-            <div className='credits'>
-            © 2023 #VANLIFE
-            </div>
-        </footer>
     </div>
 }

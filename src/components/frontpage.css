@@ -1,13 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;900&display=swap');
-.home{
+.ourroot{
     width:100vw;
     height:100vh;
+}
+.fitter{
+    height: 100vh;
+    width:100vw;
     margin:0;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
-
+.binder{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 .head{
     height:20vh;
     padding: 0px 26px;
@@ -17,7 +27,11 @@
     font-family: 'Inter', sans-serif;
     background-color: #FFF7ED;
 }
+.name:hover{
+    color:black
+}
 .name{
+    color:black;
     font-weight:700;
     font-size:min(5vw,50px);
     max-width: 240px;
@@ -27,15 +41,20 @@
     line-height: 40.271px;
 
 }
+.host-vans-title{
+    margin-top:0;
+    margin-bottom: 0;
+}
 .nav-tab{
     display: flex;
-    width: 22vw;
-    max-width:130px;
+    width: 35vw;
+    max-width:180px;
+    
     flex-direction: row;
     justify-content: space-between;
     color: #4D4D4D;
 }
-.about,.vans{
+.about,.vans,.host{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,7 +63,12 @@
     color:#4D4D4D;
     font-weight: 600;
     font-size:16px;
-
+}
+.link:hover{
+    color:black;
+}
+.activeLink{
+    color:red;
 }
 
 .main{
@@ -80,7 +104,7 @@
     background-color: #FF8C38;;
 }
 .foot{
-    height:13vh;
+    height:10vh;
     color: #AAA;
     background-color:rgba(37, 37, 37, 1);
     font-family: 'Inter' , sans-serif;
@@ -95,4 +119,51 @@
     justify-content: center;
     align-items: center;
 
+}
+.host_navbar{
+    display:flex;
+    flex-direction: row;
+    width: 55vw;
+    height:10vh;
+    justify-content: space-between;
+}
+.host_outlet{
+    display:flex;
+    justify-content: center;
+} 
+.frame_container{
+    display:flex;
+    flex-direction: column;
+    
+
+}
+img{
+    height:20vh;
+}
+.back{
+    color:grey
+}
+.back:hover{
+    color:black
+}
+.myvan_card{
+    display: flex;
+    flex-direction:row;
+}
+.myvan_card_info{
+    display: flex;
+    flex-direction: column;
+    
+}
+.myvan{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.dashboard{
+    height:60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
