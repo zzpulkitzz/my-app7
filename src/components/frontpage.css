@@ -17,7 +17,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
+}  
 .head{
     height:20vh;
     padding: 0px 26px;
@@ -63,6 +63,9 @@
     color:#4D4D4D;
     font-weight: 600;
     font-size:16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .link:hover{
     color:black;
@@ -167,3 +170,143 @@ img{
     justify-content: center;
     align-items: center;
 }
+.pricing{
+    display:flex;
+    height: 216px;
+    justify-content: center;
+    align-items: center;
+}
+.photos{
+    height:216px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vans_page_wrapper{
+
+}
+.clear{
+    height:10px;
+    margin-left:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(89, 86, 86);
+    border: 1px solid black;
+}
+.clear_off{
+    visibility: hidden;
+}
+.filter{
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+    margin-right:3px;
+}
+.vans_wrap{
+    display:inline-flex;
+    flex-direction: column;
+}
+.vans_frame{
+    display:inline
+}
+.drop-down{
+    display:inline-flex;
+    flex-direction: column;
+    width: 100px;
+    height:133px;
+    background-color: #FFF7ED;
+    justify-content: space-between;
+    border-radius: 3px;
+    margin-right:3px;
+
+}
+.rugged,.luxury,.simple{
+    margin-left:5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-right: 8px;
+}
+.simple:hover{
+    background-color:#e2e0dd;
+    color:rgb(33, 53, 71);
+}
+.luxury:hover{
+    background-color:#e2e0dd;
+    color:rgb(33, 53, 71);
+}
+.rugged:hover{
+    background-color:#e2e0dd;
+    color:rgb(33, 53, 71);
+}
+.all:hover{
+    background-color:#e2e0dd;
+    color:rgb(33, 53, 71);
+}
+.vans_page_wrapper{
+    display: block;
+    
+}
+.custom_wrap{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.vans_button{
+    border-bottom-left-radius:0px ;
+    background-color:#FFF7ED;
+    border-bottom-right-radius:0px ;
+}
+.vans_button_off{
+    background-color:#FFF7ED;
+    outline: none;
+}
+
+.drop-down-off{
+    visibility:hidden;
+    
+}
+
+.rugged,.luxury,.simple,.all {
+    border-radius: 3px;
+    background: none;
+    border: none;
+    margin-top:5px ;
+    margin-bottom:5px;
+    margin-left:8px;
+    margin-right:5px;
+    padding: 0;
+    padding-left:3px;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    outline: none; /* Remove the default outline on focus */
+  }
+.selected{
+    z-index:2;
+    background-color: #FF8C38;
+}
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.avatar:hover{
+    height:30px;
+}
+.avatar{
+    display:flex;
+    height:20px;
+    
+}
+.avatar_image{
+    flex-grow: 1;
+    width: 100%;
+    flex-shrink: 0;
+    height: 100%;
+}
+
+

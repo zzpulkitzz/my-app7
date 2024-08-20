@@ -9,11 +9,11 @@ export default function Photos() {
         .then((data)=>changeData(data.vans))
     },[0])
     if(data){
-        return <div>
+        return <div className="photos">
         <img src={data.imageUrl}/>
         </div>
     }
-    return <div>
+    return <div className="photos">
         LOADING
     </div>
 }

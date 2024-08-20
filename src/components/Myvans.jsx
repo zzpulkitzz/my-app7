@@ -1,15 +1,15 @@
-import React from "react"
-import { Link } from "react-router-dom"
+import * as React from "react"  
+import { Link, useLoaderData } from "react-router-dom"
+import { useSearchParams } from "react-router-dom"
 
+export async function loader(){
+    console.log("yes")
+    return await Auth()
+}
 export default function HostVans() {
-    const [vans, setVans] = React.useState([])
-
-    React.useEffect(() => {
-        fetch("/api/vans")
-            .then(res => res.json())
-            .then(data => setVans(data.vans))
-    }, [])
-
+    const [param,setParam]=useSearchParams();
+    console.log(param.get('type'))
+    let vans=useLoaderData()
     const hostVansEls = vans.map(van => (
         <Link
             to={`/Host/myvans/${van.id}`}
@@ -36,9 +36,7 @@ export default function HostVans() {
                             {hostVansEls}
                         </section>
 
-                    ) : (
-                            <h2>Loading...</h2>
-                        )
+                    ) : (loadingState? <h2>Loading...</h2>:null)
                 }
             </div>
         </section>

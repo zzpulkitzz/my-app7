@@ -1,3 +1,9 @@
 export default function(){
-    return <div>this is tyhe payment page</div>
+    return <div>
+        
+<a class="twitter-timeline"
+  href="https://twitter.com/{VarunMayya}">
+Tweets by 
+</a>
+    </div>
 }

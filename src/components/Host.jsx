@@ -2,6 +2,7 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import {Outlet,NavLink} from 'react-router-dom'
 export default function Host(){
+    console.log("fnhsb")
     let style={fontweight: 'bold',textDecoration: 'underline' ,color:'#161616'} 
     return <><div className="host_wrapper"><div className="host_navbar">
             <NavLink className="dashboard_link" style={({isActive})=>isActive ? style: null} to="/host" end >Dashboard</NavLink>

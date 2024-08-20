@@ -9,11 +9,11 @@ export default function Photos() {
         .then((data)=>changeData(data.vans))
     },[0])
     if(data){
-        return <div>
+        return <div className="pricing">
             Price:{data.price}
         </div>
     }else{
-        return <div>LOADING</div>
+        return <div className="pricing">LOADING</div>
     }
     
 }

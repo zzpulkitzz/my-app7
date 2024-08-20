@@ -1,22 +1,17 @@
 import React from 'react';
-import { Outlet, useParams } from "react-router-dom"
+import { Outlet, useParams ,useLoaderData} from "react-router-dom"
 import {Link,NavLink} from 'react-router-dom'
-
+import {getDataDetail} from './GetData'
+import getData from './GetData';
+export function loader({params}){
+    console.log(params)
+    return getDataDetail(params.id)
+}
 export default function Myvan(){
-    const [data,changeData]=React.useState()
+    const data=useLoaderData()
     const para=useParams()
     let style={textDecoration:'dashed' , color:'black'}
     let id=para.id
-    React.useEffect(()=>{
-        fetch(`/api/vans/${id}`)
-        .then((result)=>result.json())
-        .then((result)=>{
-            console.log(result.vans)
-            changeData(result.vans)
-        })
-    },[0])
-    if(data){
-        console.log("hey")
         return <div className="myvan">
         <Link className='back' to='..' relative='path'>
             ← Back to all vans 
@@ -61,9 +56,8 @@ export default function Myvan(){
             
             </NavLink>
         </div>
-        <Outlet context={[data,changeData]}/>
+        <Outlet context={{data}}/>
     </div>
     }
     
-}
 
